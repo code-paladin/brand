@@ -1,0 +1,63 @@
+/*
+ * Code Paladin brand tokens (Tailwind v4 theme).
+ *
+ * This file is the single source of truth for colours, fonts and layout widths across
+ * Code Paladin web properties. It is written to be lifted into a shared package and
+ * @imported by each site; keep it free of site-specific selectors.
+ *
+ * Every --color-* becomes a utility family (bg-brand, text-ink, border-line, from-navy-900 …)
+ * and supports opacity modifiers (bg-navy-900/80).
+ */
+@theme {
+  /* Typography. Loaded from Google Fonts in the root layout. */
+  --font-sans: "Space Grotesk", "Noto Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "Menlo", "Consolas", "Courier New", monospace;
+
+  /* Brand accent (primary actions, badges, links) */
+  --color-brand: #3b82f6;
+  --color-brand-hover: #2563eb;
+  --color-brand-soft: #eff6ff;
+
+  /* Secondary accent: the green glow on the dark shell and the castle scene */
+  --color-glow: #4ade80;
+
+  /* Text on light surfaces */
+  --color-ink: #1a1a1a;
+  --color-ink-muted: #424242;
+  --color-ink-subtle: #64748b;
+  --color-ink-faint: #94a3b8;
+
+  /* Light surfaces and borders */
+  --color-surface: #f8fafc;
+  --color-surface-2: #f1f5f9;
+  --color-line: #e2e8f0;
+
+  /* Dark navy used for hero gradients and dark panels */
+  --color-navy-900: #0f172a;
+  --color-navy-800: #1e293b;
+  --color-navy-700: #334155;
+
+  /* The dark green "shell": page background behind the header and footer */
+  --color-shell: #111814;
+  --color-shell-border: #283930;
+  --color-shell-hover: #1c2b23;
+  --color-shell-menu: #0c1a26;
+  --color-shell-muted: #9cbaab;
+
+  /* Status */
+  --color-danger: #dc2626;
+  --color-danger-soft: #fef2f2;
+  --color-danger-line: #fecaca;
+  --color-success: #10b981;
+
+  /* Hover accents on the About page value cards */
+  --color-amber: #f59e0b;
+  --color-amber-soft: #fffbeb;
+  --color-amber-ink: #78350f;
+  --color-violet: #9333ea;
+  --color-violet-soft: #faf5ff;
+  --color-violet-ink: #581c87;
+
+  /* Layout: max-w-page */
+  --container-page: 960px;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@code-paladin/brand",
+  "version": "0.1.0",
+  "description": "Code Paladin brand tokens (Tailwind v4 theme) and logo assets, shared across web properties",
+  "private": true,
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-paladin/brand.git"
+  },
+  "files": [
+    "tokens.css",
+    "logos"
+  ],
+  "exports": {
+    "./tokens.css": "./tokens.css",
+    "./logos/*": "./logos/*"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^4.0.0"
+  }
+}
